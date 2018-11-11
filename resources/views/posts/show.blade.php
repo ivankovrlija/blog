@@ -1,8 +1,11 @@
 @extends('layouts.master')
-<div class="container">
+
 @section('content')
-	<h1>A place to show the post.</h1>
+	<h1 >
+		{{ $post->title }}
+	</h1>
+	<p style="float: left;width: 700px;">{{ $post->body }}</p>
 	@include('layouts.sidebar')
 @endsection
-</div>
+
 
